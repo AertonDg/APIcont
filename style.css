@@ -1,0 +1,201 @@
+header{
+    text-align: center;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+body{
+  
+    background-image: url('img/pexels-arthur-shuraev-15184711.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-image: url('img/pexels-pixabay-209831.jpg');
+    background-image: url('img/pexels-fabiano-rodrigues-2290328.jpg');
+    background-image: url('img/pexels-andre-furtado-1162251.jpg'); 
+    background-image: url('img/pexels-pixabay-459439.jpg');
+    background-image: url('img/wladislaw-sokolowskij-0vw4InAC-yM-unsplash.jpg');
+    background-image: url("img/jakub-kriz-arOyDPUAJzc-unsplash.jpg");
+    background-image: url("img/pexels-rodrigo-souza-2531709.jpg");
+    max-width: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#card {
+    background: linear-gradient(180deg, #2b6be2ab 0%, #1700809c 100%);
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    width: fit-content; 
+    max-width: 90%; 
+    transition: all 0.3s ease; 
+    overflow: hidden; 
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#search{
+    background-color: rgb(39, 151, 248);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: transparent;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.171);
+    height: 40px ;
+    transition: all 0.5s;
+}
+#search:hover{
+    background-color: rgb(6, 6, 128);
+    color: white;
+}
+#input {
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.171);
+    background-color: rgb(247, 229, 250);
+    height: 30px;
+    width: 250px;
+}
+
+
+footer{
+    text-align: center;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    color: white;
+}
+#imgclima{
+    height: 60px;
+    text-align: center;
+    padding: 10px;
+}
+#terra{
+    height: 70px;
+}
+#terea{
+    text-align: center;
+    padding: 50px;
+}
+
+
+.carac{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+
+}
+.vento{
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+}
+.umid{
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+}
+.mais{
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+}
+#imgclima:hover{
+    animation-duration: 0.3s;
+    animation-name: shake;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+
+}
+@keyframes shake {
+    0%{
+        transform: translateX(-5);
+        transform: translateY(-5);
+    }
+    25%{
+        transform: translateX(10px);
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateX(-5px);    
+    }
+    75%{
+        transform: translateX(10px);
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateX(-5px);
+        transform: translateY(5px);
+    }
+}
+.graus{
+    justify-content: center;
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+.form-box{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.form-login{
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 40%;
+    gap: 0.6rem;
+    color: var(--white);
+    
+}
+
+.form-login label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form-login input{
+    font-size: 1.1rem;
+    height: 40px;
+    border-radius:8px;
+    padding-left: .4rem;
+}
+.form-login .btn{
+    background:var(--cor-3);
+    
+    animation: 5s rotate linear infinite;border-image: conic-gradient(from var(--angle) , rgb(0, 38, 255) , rgb(75, 72, 250) , rgb(109, 93, 255),rgb(250, 250, 250)  ) 1;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    height: 30px;
+}
+
+@keyframes rotate
+{
+    to
+    {
+        --angle: 360deg
+    }
+}
+@property --angle
+{
+
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+
+}
