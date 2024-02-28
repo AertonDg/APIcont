@@ -1,5 +1,5 @@
 body{
-    background-color: #191970;
+    background-color: #f1f1f1;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -73,7 +73,7 @@ h1{
     gap: 100px;
     background-color: #fff;
     border-radius: 21px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.171);;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.171);;
 }
 
 .dados{
@@ -85,12 +85,15 @@ h1{
 .form-login input{
     font-size: 1.1rem;
     height: 40px;
-    border-radius:8px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+   
     padding-left: .4rem;
     height: 40px;
     width: 250px;
     background: none;
-    border-color: #c2c2c2 #c2c2c2 #c2c2c2 #c2c2c2;
+    border-color: #4B79A1 ;
 }
 
 /* Responsive styles */
@@ -111,5 +114,6 @@ section.imagem-login{
 
     .form-login input{
         width: 100%;
+        border-top: none;
     }
 }

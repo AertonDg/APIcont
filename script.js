@@ -25,6 +25,9 @@ async function getApi() {
             cidade.innerHTML = data.name;
             temp.innerHTML = parseInt(data.main.temp ?? 0);
             ocasi.innerHTML = data.weather[0].description;
+            umid.innerHTML = data.main.humidity
+            vent.innerHTML = parseInt(data.wind.speed)
+
             icon.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
 
             // Mostrar as informações do clima
@@ -56,7 +59,7 @@ async function getApi() {
 }
 
 const chavephoto = "IQmHoU8iYkNrme12OKVz1gMpP7CehOSo-2GusndK2ws"
-const photo = document.getElementById('imagescid')
+const photo = document.getElementById('imagesci')
 let Keyword = ""
 let page = 1
 
@@ -80,8 +83,8 @@ pesq.addEventListener('click', (e) => {
 });
 function displayResults(results){
     photo.innerHTML = '';
-
-    results.forEach((result, index) => {
+    const resultLimit = results.slice(0,3)
+    resultLimit.forEach((result, index) => {
       const resultDiv = document.createElement('div');
       resultDiv.classList.add('box', 'animate-fade-in');
 
@@ -90,9 +93,9 @@ function displayResults(results){
 
       const resultImage = document.createElement('img');
       resultImage.src = result.urls.small;
-      resultImage.alt = `Result Image ${index + 1}`;
-      resultImage.style.width = '300px';
-      resultImage.style.height = '300px';
+      resultImage.alt = `Result Image ${index = 1}`;
+      resultImage.style.width = '150px';
+      resultImage.style.height = '200px';
       resultImage.classList.add('object-cover');
       resultLink.appendChild(resultImage);
       resultDiv.appendChild(resultLink);
@@ -100,4 +103,24 @@ function displayResults(results){
       console.log(resultImage)
     });
 }
+var bt = document.querySelector('#mais')
+var carac = document.querySelector('#carac')
 
+bt.addEventListener('click', function(){
+    if(carac.style.display === 'block'){
+        carac.style.display = 'none'
+    } else{
+        carac.style.display = 'block'
+    }
+})
+var btnn = document.querySelector('#Vento')
+var cara0 = document.querySelector('#cara0')
+
+btnn.addEventListener('click', function(){
+    if(cara0.style.display === 'block'){
+        cara0.style.display = 'none'
+    } else{
+        cara0.style.display = 'block'
+    }
+})
+  

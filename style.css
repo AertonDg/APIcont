@@ -114,6 +114,17 @@ footer{
     cursor: pointer;
 
 }
+
+.imgumid{
+height: 20px;
+padding: 10px;
+
+}
+.umidadee{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
 @keyframes shake {
     0%{
         transform: translateX(-5);
@@ -138,6 +149,8 @@ footer{
 .graus{
     justify-content: center;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .hide {
@@ -151,6 +164,11 @@ footer{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 
+}
+.Vento{
+    background-color: transparent;
+    color: white;
+    border: none;
 }
 
 .form-login{
@@ -187,6 +205,10 @@ footer{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 
+}
+#cidade{
+    padding: 0;
+    margin: 10px;
 }
 .form-login .btn{
     background-image: linear-gradient(to right, #4B79A1 0%, #283E51  51%, #4B79A1  100%);
@@ -225,4 +247,34 @@ footer{
     color: #fff;
     text-decoration: none;
   }
- 
+.object-cover{
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.animate-fade-in {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+}
+.box{
+    display: flex;
+}
+#imagesci{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   width: auto;
+}
+@media (max-width: 768px) {
+}
+#carac{
+    display: none;
+}
