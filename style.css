@@ -38,24 +38,26 @@ body{
 }
 
 #search{
-    background-color: rgb(39, 151, 248);
+    background-color: #437eecfe;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
     border-color: transparent;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.171);
-    height: 40px ;
+    height: 36px ;
     transition: all 0.5s;
 }
 #search:hover{
     background-color: rgb(6, 6, 128);
     color: white;
+    transform: scale(1.1);
 }
 #input {
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.171);
-    background-color: rgb(247, 229, 250);
+    background-color: rgb(255, 255, 255);
     height: 30px;
+    color: black;
     width: 250px;
 }
 
@@ -66,6 +68,10 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     color: white;
+}
+#icon.iconm{
+    width: 68px;
+    height: 68px;
 }
 #imgclima{
     height: 60px;
@@ -86,19 +92,80 @@ footer{
     justify-content: center;
     padding: 10px;
     margin: 0;
+    transition: all 0.3s ease; 
 
+}
+.mais-infor{
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+    transition: all 0.3s ease; 
+
+}
+.mais-infu{
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+  border-color:transparent ;
+}
+
+  
+.mais-infu:hover{
+    transition: all 0.5s;
+    color: #0088ff;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-color: white;
 }
 .vento{
     padding: 5px;
     background-color: transparent;
     color: white;
-    border-color: transparent;
+   border-color: transparent;
+}
+.vento:hover{
+   
+    color: #0088ff;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    transition: all 0.5s;
+    border-color: white;
+}
+.ventoo{
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease; 
+}
+.imgwind{
+    height: 29px;
+padding: 10px;
+}
+.mais:hover{
+    
+    color: #0088ff;
+    border-left: none;
+    border-right: none;
+    transition: all 0.5s;
+    border-top: none;
+    border-color: white;
+
 }
 .umid{
     padding: 5px;
     background-color: transparent;
     color: white;
-    border-color: transparent;
+}
+.tempmax{ 
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.tempmin{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
 }
 .mais{
     padding: 5px;
@@ -243,7 +310,7 @@ padding: 10px;
 }
         
 :hover {
-    background-position: right center; /* change the direction of the change here */
+    background-position: right center;
     color: #fff;
     text-decoration: none;
   }
@@ -254,7 +321,13 @@ padding: 10px;
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: all 0.5s;
+
     
+}
+.object-cover:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.171);;
 }
 .animate-fade-in {
     justify-content: center;
